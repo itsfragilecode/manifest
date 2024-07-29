@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+	<project name="AswinOP/device_xiaomi_veux" path="device/xiaomi/veux" remote="github" revision="fourteen"/>
+	<project name="AswinOP/vendor_xiaomi_veux" path="vendor/xiaomi/veux" remote="github" revision="fourteen"/>
+	<project name="FlamingoOS-Devices/hardware_dolby" path="hardware/dolby" remote="github" revision="A13"/>
+	<project name="AswinOP/vendor_xiaomi_miuicamera" path="vendor/xiaomi/miuicamera" remote="github" revision="main"/>
+	<project name="AswinOP/vendor_xiaomi_miuicamera-veux" path="vendor/xiaomi/miuicamera-veux" remote="github" revision="main"/>
+	<project name="PixelOS-AOSP/hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="fourteen"/>
+	<project name="AswinOP/kernel_xiaomi_sm6375" path="kernel/xiaomi/sm6375" remote="github" revision="main"/>
+	<project name="AswinOP/device_xiaomi_veux-kernel" path="device/xiaomi/veux-kernel" remote="github" revision="main"/>
+  
+</manifest>
