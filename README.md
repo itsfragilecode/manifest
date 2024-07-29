@@ -1,4 +1,6 @@
-# PixelOS
+# PixelOS for veux
+
+See [BUILD.md](./BUILD.md).
 
  Getting Started
 ---------------
