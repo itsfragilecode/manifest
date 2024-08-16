@@ -56,9 +56,6 @@
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="itsfragilecode" />
 
   <!-- Packages -->
-  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="itsfragilecode" />
-  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="itsfragilecode" />
-  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="itsfragilecode" />
 
   <!-- Vendor -->
   <project path="vendor/aosp" name="vendor_aosp" remote="itsfragilecode" />
