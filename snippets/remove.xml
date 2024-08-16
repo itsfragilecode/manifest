@@ -143,7 +143,6 @@
   <remove-project name="platform/packages/apps/QuickSearchBox"/>
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/modules/adb" />
-  <remove-project name="platform/packages/modules/AdServices" />
   <remove-project name="platform/packages/modules/Bluetooth" />
   <remove-project name="platform/packages/modules/common" />
   <remove-project name="platform/packages/modules/Connectivity" />
