@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <remote  name="PixelOS"
-           fetch="https://github.com/PixelOS-AOSP"
-           revision="refs/heads/fourteen" />
-
-  <remote  name="PixelOS-Gitlab"
-           fetch="https://gitlab.com/PixelOS-AOSP"
-           revision="refs/heads/fourteen" />
+  
+  <remote  name="itsfragilecode"
+           fetch="https://github.com/itsfragilecode"
+           revision="fourteen" />
 
   <!-- Rootdir -->
-  <project path="bionic" name="bionic" groups="pdk" remote="PixelOS" />
-  <project path="art" name="art" groups="pdk" remote="PixelOS" />
+  <project path="bionic" name="bionic" groups="pdk" remote="itsfragilecode" />
+  <project path="art" name="art" groups="pdk" remote="itsfragilecode" />
 
   <!-- Bootable -->
-  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="PixelOS" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="itsfragilecode" />
 
   <!-- Build -->
-  <project path="build/make" name="build" groups="pdk" remote="PixelOS">
+  <project path="build/make" name="build" groups="pdk" remote="itsfragilecode">
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
     <linkfile dest="build/core" src="core" />
@@ -25,48 +21,53 @@
     <linkfile dest="build/target" src="target" />
     <linkfile dest="build/tools" src="tools" />
   </project>
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="PixelOS">
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="itsfragilecode">
     <linkfile dest="Android.bp" src="root.bp" />
     <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
 
   <!-- External -->
-  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="PixelOS" />
-  <project path="external/jemalloc_new" name="external_jemalloc_new" groups="pdk" remote="PixelOS" />
-  <project path="external/skia" name="external_skia" groups="pdk" remote="PixelOS" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="itsfragilecode" />
+  <project path="external/jemalloc_new" name="external_jemalloc_new" groups="pdk" remote="itsfragilecode" />
+  <project path="external/skia" name="external_skia" groups="pdk" remote="itsfragilecode" />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="PixelOS" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="PixelOS" />
-  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="PixelOS" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="PixelOS" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="itsfragilecode" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="itsfragilecode" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="itsfragilecode" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="itsfragilecode" />
 
   <!-- Hardware -->
-  <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" groups="generic_fs,pixel" remote="PixelOS" />
+  <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" groups="generic_fs,pixel" remote="itsfragilecode" />
 
   <!-- Packages -->
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="PixelOS" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="PixelOS" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="PixelOS" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="itsfragilecode" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="itsfragilecode" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="itsfragilecode" />
 
   <!-- System -->
-  <project path="system/core" name="system_core" groups="pdk" remote="PixelOS" />
-  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="PixelOS" />
-  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="PixelOS" />
+  <project path="system/core" name="system_core" groups="pdk" remote="itsfragilecode" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="itsfragilecode" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="itsfragilecode" />
 
   <!-- Begin Extras -->
 
   <!-- Device -->
-  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="PixelOS" />
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="itsfragilecode" />
 
   <!-- Packages -->
-  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="PixelOS" />
-  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="PixelOS" />
-  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="PixelOS" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="itsfragilecode" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="itsfragilecode" />
+  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="itsfragilecode" />
 
   <!-- Vendor -->
-  <project path="vendor/aosp" name="vendor_aosp" remote="PixelOS" />
-  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="PixelOS" />
-  <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="PixelOS-Gitlab" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="itsfragilecode" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="itsfragilecode" />
+
+  <!-- Note: Use PixelOS' gitlab repo if you don't have access: https://gitlab.com/pixelos-aosp/vendor_gms -->
+  <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="itsfragilecode" />
+
+  <!-- device-specific -->
+  <include name="snippets/custom-veux.xml" />
 
 </manifest>
